@@ -22,7 +22,7 @@ function FoodCard(props) {
         const cloudRandom = Math.floor(Math.random() * foodCloudFiltered.length)
 
 
-        if (caseTW === 'Clear' || caseTW === 'Few clouds') {
+        if (caseTW === 'Clear sky' || caseTW === 'Clear' || caseTW === 'Few clouds') {
 
             return (<Col xl={3}>
 
