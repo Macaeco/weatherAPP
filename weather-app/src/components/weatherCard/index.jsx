@@ -81,8 +81,8 @@ function WeatherCard() {
   }, [lat, lon, unitUse])
 
 
-  {console.log(weather?.daily)}
-
+  
+console.log(weather)
   return (
     <React.Fragment>
     <Header upload={{updateLat, updateLon}}></Header>
