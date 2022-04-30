@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import {apikey} from "../api-key/key.js"
 
 
 
@@ -8,7 +9,7 @@ export const getLatAndLonFromCity = async (citySearch) => {
     
 
 
-    let key = 'da66c2d9d69cd9be8dc442074e110412';
+    let key = apikey;
 
 
 
@@ -21,7 +22,7 @@ export const getWeatherByLocation = async (lat, lon, unit) => {
 
 
 
-     let key = process.env.REACT_API_KEY; 
+     let key = apikey; 
 
 
      
