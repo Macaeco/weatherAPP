@@ -21,8 +21,7 @@ export const getWeatherByLocation = async (lat, lon, unit) => {
 
 
 
-     let key ='da66c2d9d69cd9be8dc442074e110412'; 
-
+     let key = process.env.REACT_API_KEY; 
 
 
      
@@ -36,7 +35,7 @@ export const getWeatherByLocation = async (lat, lon, unit) => {
 
 export const getCityName = async (lat, lon) => {
 
-    let key = 'da66c2d9d69cd9be8dc442074e110412'; 
+    let key = process.env.REACT_API_KEY; 
 
     const r = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`)
     const d = await r.json()
